@@ -28,6 +28,12 @@ dev_dependencies:
   test: ^1.16.4
   lints: ^6.0.0
 
+dependency_overrides:
+  bson:
+    git:
+      url: https://github.com/okandemirofficial/bson.git
+      ref: fix/object_id_generation_duplicate_id
+
 false_secrets:
  - /test/certificates_for_testing/*.key
  - /test/certificates_for_testing/*.pem
