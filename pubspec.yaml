@@ -7,7 +7,10 @@ environment:
   sdk: ">=3.3.0 <4.0.0"
 
 dependencies:
-  bson: ^5.0.0
+  bson:
+    git:
+      url: https://github.com/okandemirofficial/bson.git
+      ref: fix/object_id_generation_duplicate_id
   crypto: ^3.0.0
   fixnum: ^1.1.0
   logging: ^1.0.0
@@ -24,12 +27,7 @@ dependencies:
 dev_dependencies:
   test: ^1.16.4
   lints: ^6.0.0
-
-dependency_overrides:
-  bson:
-    git:
-      url: https://github.com/okandemirofficial/bson.git
-      ref: fix/object_id_generation_duplicate_id
+ 
 
 false_secrets:
  - /test/certificates_for_testing/*.key
